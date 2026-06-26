@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #F5F0E8;
+    --foreground: #2C1A0E;
+  }
+  .dark {
+    --background: #1a1108;
+    --foreground: #F5F0E8;
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300;
+  }
+}
